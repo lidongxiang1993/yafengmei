@@ -7,7 +7,7 @@
 <meta name="description" content="我公司成立于2001年，是一家专业制造遮阳篷、天蓬帘、电动遮阳蓬、户外遮阳蓬的品牌企业，集研发、设计、生产、安装和售后服务于一身。是我国最早将流行于欧美等国的遮阳文化引入本土企业，并与香港著名权威企业建立紧密的合作开发关系。   目前已拥有了完善的生产设备和拥有电动遮阳界一流的设计人员、一流的施工队伍，提供国际先进的高品质遮阳系列产品。" />
 <script type="text/javascript" src="../js/jquery1.42.min.js"></script>
 <script type="text/javascript" src="../js/jquery.superslide.2.1.1.js"></script>
-<script src="http://api.map.baidu.com/getscript?v=2.0&amp;ak=oFlklpO9lXjGoIUTHfy1b8Se&amp;services=&amp;t=20151014112051" type="text/javascript"></script>
+<script src="https://api.map.baidu.com/api?v=2.0&ak=6XRXjMLlX3mfF3EZOG3BkuKF97WdvcLK" type="text/javascript"></script>
 <link rel="stylesheet" href="../css/contact_ymf.css" />
 <style type="text/css">
 .nav li a.lid8{border-color:#468a00;color:#468a00;}
@@ -75,21 +75,15 @@
 			var map = new BMap.Map("map");
 			map.centerAndZoom(new BMap.Point(104.120334,30.759274), 19);
 			map.enableScrollWheelZoom();
-
 			// 创建点
 			var point=new BMap.Point(104.120334,30.759274);
-
 			//创建marker
 			var marker=new BMap.Marker(point);
-
 			map.addOverlay(marker);
-
 			// 创建信息窗口
 			var opts={width : 200,height: 80,title : "成都雅美风遮阳雨蓬有限公司"};
 			var infoWindow=new BMap.InfoWindow("地址：成都市蓉都大道天川路（天回第二实验小学对面）", opts);
-
 			map.openInfoWindow(infoWindow,point);
-
 			marker.addEventListener("click", function(){
 				map.openInfoWindow(infoWindow,point); //开启信息窗口
 			});
